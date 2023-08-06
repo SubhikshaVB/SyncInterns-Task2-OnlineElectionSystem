@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Election System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="decorative-border">
+    <div class="box-container">
+        <h1>Welcome to the Online Election!</h1>
+        <p style="font-size: larger;">Please cast your vote:</p>
+
+        <div class="candidates">
+            <label style="font-size: larger;">
+                <input type="radio" name="candidate" value="candidate1">
+                Candidate 1
+            </label>
+
+            <label style="font-size: larger;">
+                <input type="radio" name="candidate" value="candidate2">
+                Candidate 2
+            </label>
+
+            <label style="font-size: larger;">
+                <input type="radio" name="candidate" value="candidate3">
+                Candidate 3
+            </label>
+        </div>
+
+        <button onclick="castVote()"  style="font-size: larger;">Vote</button>
+        <button id="show-result-btn" onclick="showResults()" style="font-size: larger;">Show Results</button>
+
+        <h2>Total Votes:</h2>
+        <div id="voteResults"></div>
+
+        <h2>Winner:</h2>
+        <div id="winner"></div>
+    </div>
+</div>
+    <!-- Add the jQuery library before your custom script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Include your script.js -->
+<script src="script.js"></script>
+
+</body>
+</html> 
